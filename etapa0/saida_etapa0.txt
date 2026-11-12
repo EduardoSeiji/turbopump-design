@@ -1,0 +1,24 @@
+== (a)+(b)+(c) Bombas ==
+OP (HTP)    Q= 12.64 L/s  H=  1693 m  P_h= 290.6 kW  P_eixo= 484.3 kW  NPSHa= 36.8 m  dT_perdas= 2.4 K
+      n= 40 krpm -> n_q= 17.0
+      n= 60 krpm -> n_q= 25.5
+      n= 80 krpm -> n_q= 34.1
+FP (Jet A)  Q=  3.14 L/s  H=  1667 m  P_h=  40.9 kW  P_eixo=  90.8 kW  NPSHa= 64.1 m  dT_perdas= 4.5 K
+      n= 40 krpm -> n_q=  8.6
+      n= 60 krpm -> n_q= 12.9
+      n= 80 krpm -> n_q= 17.2
+Potência de eixo bombas = 575 kW ; turbina deve entregar ≈ 593 kW
+
+== Gás de decomposição ==
+T_liq= 298.1 K -> T_adiabática= 1029.7 K
+T_liq= 400.0 K -> T_adiabática= 1182.4 K
+@1150 K: M=22.10 g/mol  cp=1854 J/kgK  gamma=1.255  x_O2=0.292  Y_O2=0.423
+
+== Turbina ==
+PR=1.154  dh_s=61.0 kJ/kg  dT_s=33.0 K  c0=349 m/s
+Potência ideal (eta_T=1) = 1068 kW
+dh real necessário = 33.9 kJ/kg -> dT real ≈ 18.3 K ; eta_T necessária = 0.56
+Com dT=10 K: P_T = 324 kW  (< potência hidráulica total 331 kW !)
+
+== Sensibilidade: cada 10 bar a menos na descarga da OP ==
+-10 bar -> -21.1 kW de eixo (3.7 % do total)
