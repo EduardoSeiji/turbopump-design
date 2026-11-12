@@ -1,0 +1,40 @@
+{
+  "decisao": {
+    "n_nominal_rpm": 55000,
+    "arranjo": "FP balanco - B1 (par contato angular) - pacote interpropelente - OP eixo passante - B2 (rolos) - turbina balanco",
+    "eixo_sob_OP": "IN718 macico D24 mm, luva/revestimento compativel com HTP",
+    "cubo_indutor_OP_mm": 28,
+    "criterio_cavitacao": "K_op >= 0.025 (2.5 x K* 0.01) com F_NPSH 1.2"
+  },
+  "indutor_OP_55k_cubo28": {
+    "Dt": 0.0462,
+    "nu": 0.6055,
+    "ut": 133.1661,
+    "phi": 0.0892,
+    "tau": 0.0339,
+    "K": 0.0258,
+    "beta_B": 8.8655,
+    "Kcrit25": 0.015,
+    "Kcrit3": 0.018,
+    "nss": 474.4133,
+    "S_US": 24454.2962
+  },
+  "potencias_kW": {
+    "OP_eixo": 415,
+    "FP_eixo": 74,
+    "turbina_eta_mec_0p97": 504
+  },
+  "torque_turbina_Nm": 87.5,
+  "DN_mancais": 1100000.0,
+  "primeira_critica_rpm": {
+    "06 base (d_OP 20, IP 38 mm)": 65720,
+    "d_OP 18 (tie-bolt + Al)": 61263,
+    "d_OP 22": 68653,
+    "d_OP 24 (eixo 24, cubo Al 28)": 70548,
+    "d_OP 20 + IP −10 mm": 66841,
+    "d_OP 22 + IP −10 mm": 69248,
+    "d_OP 24 + IP −10 mm": 70762,
+    "d_OP 24 + IP −10 mm + d_IP 24": 70836
+  },
+  "nota_modelo_rotor": "Euler-Bernoulli FE + discos (Id-Ip); 2.4 % abaixo do modelo da etapa de eixo/mancais; usar como comparacao relativa"
+}

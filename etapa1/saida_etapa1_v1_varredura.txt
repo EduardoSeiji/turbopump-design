@@ -1,0 +1,32 @@
+==============================================================================
+1) PONTO DE PROJETO E NPSHA
+OP (HTP 90%)   Q= 12.64 L/s  H=  1693 m  NPSHA= 36.8 m  NPSH3,adm= 30.6 m  P_hid=290.6 kW
+FP (Jet A)     Q=  3.14 L/s  H=  1667 m  NPSHA= 64.0 m  NPSH3,adm= 53.3 m  P_hid= 40.9 kW
+==============================================================================
+2) ROTAÇÃO MÁXIMA POR CAVITAÇÃO  n = n_ss·NPSH3^0.75/√Q   [Gülich Eq. T15.1.1]
+OP (HTP 90%)   sem indutor (impeller de alta pressão)   n_ss= 200 (S= 10309 US)  n_max=   23169 rpm  n_q=  9.9
+OP (HTP 90%)   indutor conservador (~26k US)            n_ss= 500 (S= 25773 US)  n_max=   57923 rpm  n_q= 24.7
+OP (HTP 90%)   indutor agressivo (~35k US)              n_ss= 680 (S= 35052 US)  n_max=   78776 rpm  n_q= 33.6
+FP (Jet A)     sem indutor (impeller de alta pressão)   n_ss= 200 (S= 10309 US)  n_max=   70373 rpm  n_q= 15.1
+FP (Jet A)     indutor conservador (~26k US)            n_ss= 500 (S= 25773 US)  n_max=  175932 rpm  n_q= 37.8
+FP (Jet A)     indutor agressivo (~35k US)              n_ss= 680 (S= 35052 US)  n_max=  239268 rpm  n_q= 51.4
+==============================================================================
+3) VARREDURA EM ROTAÇÃO
+ n[rpm]  | OP: nq   ψ    u2[m/s] d2[mm] η    nss_req u1t[m/s] Dt[mm] ψ_ind | FP: nq   u2   d2[mm] η    | P[kW] T[Nm] d_t[mm] d_b[mm] DN[1e6]
+   30000 |  12.8  1.10    174  110.8 0.63    259      76   48.3  0.03 |   6.4   169 107.3 0.23 |   639 203.3  19.0   28.6  0.86
+   40000 |  17.0  1.06    177   84.5 0.68    345      92   43.9  0.07 |   8.6   170  81.1 0.33 |   551 131.5  16.5   24.7  0.99
+   45000 |  19.2  1.04    178   75.7 0.70    388      99   42.2  0.09 |   9.7   171  72.4 0.36 |   527 111.9  15.6   23.4  1.05
+   50000 |  21.3  1.03    180   68.7 0.72    432     107   40.7  0.10 |  10.7   171  65.5 0.39 |   510  97.4  14.9   22.3  1.12
+   55000 |  23.4  1.01    181   63.0 0.73    475     114   39.4  0.11 |  11.8   172  59.7 0.42 |   497  86.2  14.3   21.5  1.18
+   60000 |  25.6  0.99    183   58.2 0.74    518     120   38.3  0.12 |  12.9   173  55.0 0.44 |   486  77.4  13.8   20.7  1.24
+   65000 |  27.7  0.98    184   54.2 0.75    561     127   37.3  0.12 |  14.0   173  51.0 0.46 |   478  70.2  13.4   20.0  1.30
+   70000 |  29.8  0.96    186   50.7 0.75    604     133   36.4  0.13 |  15.0   174  47.5 0.48 |   471  64.3  13.0   19.5  1.36
+   80000 |  34.1  0.93    189   45.1 0.76    691     146   34.8  0.14 |  17.2   176  41.9 0.50 |   461  55.1  12.3   18.5  1.48
+==============================================================================
+4) LIMITES DE VELOCIDADE PERIFÉRICA (disco girante, Gülich Eq. T14.1.10 / Timoshenko)
+  Al 6061-T6 (HTP ok)            u_adm: furado  286 m/s | maciço  405 m/s  (SF=1.5 no escoamento)
+  Al 7075-T73 (HTP: verificar)   u_adm: furado  352 m/s | maciço  498 m/s  (SF=1.5 no escoamento)
+  Inconel 718 (Jet A)            u_adm: furado  319 m/s | maciço  452 m/s  (SF=1.5 no escoamento)
+  17-4PH H1025 (Jet A)           u_adm: furado  323 m/s | maciço  457 m/s  (SF=1.5 no escoamento)
+  Huzel Tab. 6-5: Inco 718 forjado em LOX ~274 m/s; Al 357 fundido em LH2 ~363 m/s
+  DN: Huzel p.209: 1,6e6 (Conrad/rolos), 2,1e6 (contato angular); NASA SP-8100 Tab. I: 1,0–2,0e6
