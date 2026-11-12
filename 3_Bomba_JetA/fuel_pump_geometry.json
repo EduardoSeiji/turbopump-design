@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "component": "fuel_pump",
+    "project": "turbopump-design",
+    "stage": "3_Bomba_JetA",
+    "revision": 2,
+    "units": {
+      "length": "mm",
+      "angle": "deg",
+      "mass": "kg",
+      "inertia": "kg*m^2"
+    },
+    "status": "meanline 1D preliminar; substituir contorno meridional e pas pelo export do CFTurbo",
+    "z_ref": "z_local=0 na face traseira do disco do impeller, + para a succao (no rotor da etapa 5: FP em z 0-18 mm)"
+  },
+  "design_point": {
+    "fluid": "Jet A",
+    "rho": 795.0,
+    "mdot_kg_s": 2.5,
+    "Q_m3_s": 0.0031447,
+    "H_m": 1666.9,
+    "n_rpm": 55000.0,
+    "nq": 11.82,
+    "NPSHA_m": 64.1,
+    "NPSH3_est_m": 45.6,
+    "eta_meanline": 0.555,
+    "eta_cycle": 0.55,
+    "P_shaft_meanline_kW": 73.61,
+    "P_shaft_cycle_kW": 74.33
+  },
+  "inducer": {
+    "present": false,
+    "reserve_design": {
+      "D_tip_mm": 24.814,
+      "D_hub_mm": 7.444,
+      "u_tip": 71.459,
+      "phi": 0.1
+    },
+    "trigger": "adicionar se NPSH3 (CFTurbo/teste) > 53 m ou p_in < 4.3 bar"
+  },
+  "impeller": {
+    "type": "radial semiaberto (sem disco frontal), simples estagio, entrada axial, em balanco",
+    "d_bore_shaft": 14.0,
+    "d_hub_eye": 20.0,
+    "d1_eye_tip": 26.874,
+    "d1m": 23.688,
+    "d2": 59.998,
+    "b2": 2.812,
+    "b1": 3.437,
+    "z_blades": 6,
+    "z_splitters": 6,
+    "L_splitter_frac": 0.6,
+    "e1_LE": 0.8,
+    "e2_TE": 0.8,
+    "beta1B_hub": 19.97,
+    "beta1B_mean": 17.32,
+    "beta1B_tip": 15.6,
+    "beta2B": 25.0,
+    "t_rear_disk": 2.2,
+    "L_hub": 18.0,
+    "s_tip_axial": 0.1,
+    "sax_rear_gap": 1.2,
+    "rear_ring": {
+      "d_E": 45.2,
+      "s_radial": 0.05,
+      "N_teeth": 5,
+      "L": 5.0,
+      "balance_holes": "furos no disco entre d_hub e d_E, ventilando a camara a ~p_in (dimensionar p/ Q_E)"
+    },
+    "meridional_simple": {
+      "L_ax": 6.937,
+      "R_shroud_arc": 3.437,
+      "R_hub_arc": 5.499
+    }
+  },
+  "volute": {
+    "type": "espiral simples, secao circular, 360 graus",
+    "d_cutwater": 64.198,
+    "b3": 5.625,
+    "sections": [
+      {
+        "eps_deg": 30,
+        "d_section": 1.673,
+        "r_center": 32.935
+      },
+      {
+        "eps_deg": 60,
+        "d_section": 2.379,
+        "r_center": 33.288
+      },
+      {
+        "eps_deg": 90,
+        "d_section": 2.925,
+        "r_center": 33.561
+      },
+      {
+        "eps_deg": 120,
+        "d_section": 3.389,
+        "r_center": 33.793
+      },
+      {
+        "eps_deg": 150,
+        "d_section": 3.8,
+        "r_center": 33.999
+      },
+      {
+        "eps_deg": 180,
+        "d_section": 4.174,
+        "r_center": 34.186
+      },
+      {
+        "eps_deg": 210,
+        "d_section": 4.519,
+        "r_center": 34.358
+      },
+      {
+        "eps_deg": 240,
+        "d_section": 4.842,
+        "r_center": 34.52
+      },
+      {
+        "eps_deg": 270,
+        "d_section": 5.147,
+        "r_center": 34.672
+      },
+      {
+        "eps_deg": 300,
+        "d_section": 5.436,
+        "r_center": 34.817
+      },
+      {
+        "eps_deg": 330,
+        "d_section": 5.712,
+        "r_center": 34.955
+      },
+      {
+        "eps_deg": 360,
+        "d_section": 5.977,
+        "r_center": 35.087
+      }
+    ],
+    "d_throat": 5.977,
+    "diffuser_cone_total_deg": 8.0,
+    "diffuser_L": 117.225,
+    "d_discharge": 22.372
+  },
+  "suction": {
+    "d_suction_flange": 28.298
+  },
+  "loads": {
+    "F_axial_N_to_suction": -13,
+    "F_axial_no_ring_N": 8522,
+    "F_radial_nominal_N": 180,
+    "F_radial_shutoff_N": 508,
+    "F_radial_design_N": 586,
+    "torque_meanline_Nm": 12.78,
+    "torque_cycle_Nm": 12.91
+  },
+  "rotordynamics": {
+    "impeller_17-4PH": {
+      "m_kg": 0.083063354,
+      "z_cg_mm": 2.362926643,
+      "Ip_kgm2": 3.1971e-05,
+      "Id_kgm2": 1.7198e-05,
+      "Ip_Id": 1.85901468
+    },
+    "impeller_Al7075-T73": {
+      "m_kg": 0.029924106,
+      "z_cg_mm": 2.362926643,
+      "Ip_kgm2": 1.1518e-05,
+      "Id_kgm2": 6.196e-06,
+      "Ip_Id": 1.85901468
+    },
+    "entrained_fluid": {
+      "m_kg": 0.00593,
+      "Ip_kgm2": 3.083e-06
+    },
+    "blade_passing_Hz": {
+      "full_blades": 5500,
+      "with_splitters": 11000
+    }
+  },
+  "alternative_closed": {
+    "d2": 59.18,
+    "b2": 2.774,
+    "d1": 27.003,
+    "d_rings": 31.403,
+    "s_seal": 0.05,
+    "N_lab": 5,
+    "eta": 0.494,
+    "m_17-4PH_kg": 0.1061
+  }
+}

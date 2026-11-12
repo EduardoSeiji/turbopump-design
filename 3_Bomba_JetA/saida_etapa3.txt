@@ -1,0 +1,99 @@
+--- BASELINE rev.2 (semiaberto + anel traseiro + furos): shroud=open n=55000
+ nq=11.82 psi=1.096 u2=172.8 d2=60.00 b2=2.81 mm etah=0.723 etav=0.911
+ d1=26.87 d1m=23.69 c1m=13.65 u1=77.4 w1=78.6 lam_w3=0.112 NPSH3=45.6 nss=176 F=1.41 p_in_min=4.27 bar
+   beta1 hub: d=20.00 flow=16.97 B=19.97 tau1=1.288
+   beta1 mean: d=23.69 flow=14.32 B=17.32 tau1=1.276
+   beta1 tip: d=26.87 flow=12.60 B=15.60 tau1=1.268
+ slip=0.849 c2u=130.8 c2m=7.41 alpha2=3.24 beta2=10.02 delta2=15.0 w2/w1=0.54 Hp=1120
+ Qsp/Q=0.098 PRR/Pu=0.283 losses={'hidraulica_kW': 15.64, 'vazamento_kW': 5.55, 'disco_tras_kW': 11.55, 'disco_frontal_kW': 0.0}
+ P_shaft=73.61 kW eta=0.555 (T3.9.1 0.419) T=12.78 Nm dT=6.5 K
+ volute rz=32.10 b3=5.62 d3q=5.98 c3q/c2=0.86 d_out=22.4 Ldiff=117 d_suc=28.3
+ FR=180/508 N  Fax=-13 N (rear 11150, front 11125, eye 0) p2=92.3 bar
+ mass 17-4PH {'m_kg': 0.0830634, 'z_cg_mm': 2.3629266, 'Ip_kgm2': 3.2e-05, 'Id_kgm2': 1.72e-05, 'Ip_Id': 1.8590147}
+ mass Al     {'m_kg': 0.0299241, 'z_cg_mm': 2.3629266, 'Ip_kgm2': 1.15e-05, 'Id_kgm2': 6.2e-06, 'Ip_Id': 1.8590147}  fluid 5.9 g Ip_fl=3.08e-06
+ d_E=45.2 mm  Q_E/Q=0.098  p(r_hub) atras ~ p_in
+--- semiaberto SEM anel: shroud=open n=55000
+ nq=11.82 psi=1.105 u2=172.0 d2=59.73 b2=2.80 mm etah=0.723 etav=1.000
+ d1=26.43 d1m=23.43 c1m=13.42 u1=76.1 w1=77.3 lam_w3=0.112 NPSH3=44.1 nss=180 F=1.45 p_in_min=4.13 bar
+   beta1 hub: d=20.00 flow=16.75 B=19.75 tau1=1.292
+   beta1 mean: d=23.43 flow=14.29 B=17.29 tau1=1.281
+   beta1 tip: d=26.43 flow=12.65 B=15.65 tau1=1.273
+ slip=0.849 c2u=131.5 c2m=6.81 alpha2=2.97 beta2=9.54 delta2=15.5 w2/w1=0.53 Hp=1112
+ Qsp/Q=0.000 PRR/Pu=0.277 losses={'hidraulica_kW': 15.65, 'vazamento_kW': 0.0, 'disco_tras_kW': 11.31, 'disco_frontal_kW': 0.0}
+ P_shaft=67.84 kW eta=0.603 (T3.9.1 0.419) T=11.78 Nm dT=5.4 K
+ volute rz=31.95 b3=5.60 d3q=5.96 c3q/c2=0.86 d_out=22.4 Ldiff=117 d_suc=28.3
+ FR=179/505 N  Fax=8522 N (rear 19569, front 11013, eye 0) p2=91.7 bar
+ mass 17-4PH {'m_kg': 0.0742414, 'z_cg_mm': 2.8897397, 'Ip_kgm2': 2.75e-05, 'Id_kgm2': 1.47e-05, 'Ip_Id': 1.866524}
+ mass Al     {'m_kg': 0.0267459, 'z_cg_mm': 2.8897397, 'Ip_kgm2': 9.9e-06, 'Id_kgm2': 5.3e-06, 'Ip_Id': 1.866524}  fluid 5.7 g Ip_fl=2.92e-06
+--- FECHADO: shroud=closed n=55000
+ nq=11.82 psi=1.126 u2=170.4 d2=59.18 b2=2.77 mm etah=0.750 etav=0.887
+ d1=27.00 d1m=23.76 c1m=13.71 u1=77.8 w1=79.0 lam_w3=0.112 NPSH3=46.0 nss=175 F=1.39 p_in_min=4.31 bar
+   beta1 hub: d=20.00 flow=17.03 B=20.03 tau1=1.287
+   beta1 mean: d=23.76 flow=14.33 B=17.33 tau1=1.275
+   beta1 tip: d=27.00 flow=12.59 B=15.59 tau1=1.267
+ slip=0.849 c2u=127.9 c2m=7.83 alpha2=3.50 beta2=10.44 delta2=14.6 w2/w1=0.55 Hp=1117
+ Qsp/Q=0.127 PRR/Pu=0.520 losses={'hidraulica_kW': 13.63, 'vazamento_kW': 6.94, 'disco_tras_kW': 10.84, 'disco_frontal_kW': 10.43}
+ P_shaft=82.72 kW eta=0.494 (T3.9.1 0.419) T=14.36 Nm dT=8.4 K
+ volute rz=31.66 b3=5.55 d3q=6.05 c3q/c2=0.85 d_out=22.4 Ldiff=117 d_suc=28.3
+ FR=218/617 N  Fax=-39 N (rear 16384, front 16154, eye 230) p2=92.1 bar
+ mass 17-4PH {'m_kg': 0.1061041, 'z_cg_mm': 3.4195236, 'Ip_kgm2': 4.03e-05, 'Id_kgm2': 2.18e-05, 'Ip_Id': 1.8510517}
+ mass Al     {'m_kg': 0.0382247, 'z_cg_mm': 3.4195236, 'Ip_kgm2': 1.45e-05, 'Id_kgm2': 7.8e-06, 'Ip_Id': 1.8510517}  fluid 5.8 g Ip_fl=2.93e-06
+aletas traseiras k=0.85: F_ax=2386 N, p no cubo atras=16.3 bar
+  camara +1.0 bar acima de p_in -> F_ax +129 N
+  camara +3.0 bar acima de p_in -> F_ax +387 N
+sensibilidade (baseline):
+  s_tip=5e-05: d2=59.5 d1=26.9 eta=0.567 P=72.1 kW F_NPSH=1.41 Fax=-146 N
+  s_tip=0.0001: d2=60.0 d1=26.9 eta=0.555 P=73.6 kW F_NPSH=1.41 Fax=-13 N
+  s_tip=0.00015: d2=60.5 d1=26.9 eta=0.544 P=75.2 kW F_NPSH=1.41 Fax=123 N
+  etah=0.7: d2=61.7 d1=26.9 eta=0.514 P=79.6 kW F_NPSH=1.41 Fax=502 N
+  etah=0.75: d2=60.0 d1=26.9 eta=0.555 P=73.6 kW F_NPSH=1.41 Fax=-13 N
+  etah=0.8: d2=58.4 d1=26.9 eta=0.597 P=68.5 kW F_NPSH=1.41 Fax=-474 N
+  s_E=5e-05: d2=60.0 d1=26.9 eta=0.555 P=73.6 kW F_NPSH=1.41 Fax=-13 N
+  s_E=7.5e-05: d2=60.2 d1=27.1 eta=0.529 P=77.2 kW F_NPSH=1.38 Fax=88 N
+  s_E=0.0001: d2=60.3 d1=27.4 eta=0.505 P=80.9 kW F_NPSH=1.35 Fax=189 N
+  beta2B=22.0: d2=60.3 d1=26.9 eta=0.553 P=73.9 kW F_NPSH=1.41 Fax=72 N
+  beta2B=25.0: d2=60.0 d1=26.9 eta=0.555 P=73.6 kW F_NPSH=1.41 Fax=-13 N
+  beta2B=30.0: d2=59.7 d1=26.9 eta=0.557 P=73.4 kW F_NPSH=1.41 Fax=-94 N
+  d_hub=0.018: d2=60.0 d1=25.7 eta=0.555 P=73.6 kW F_NPSH=1.54 Fax=-222 N
+  d_hub=0.02: d2=60.0 d1=26.9 eta=0.555 P=73.6 kW F_NPSH=1.41 Fax=-13 N
+  d_hub=0.024: d2=60.0 d1=29.5 eta=0.556 P=73.6 kW F_NPSH=1.17 Fax=492 N
+{
+ "A1_fechado_aneis_furos": {
+  "d2": 59.179743420293576,
+  "eta": 0.49418857452280107,
+  "P": 82.72247731370392
+ },
+ "A2_semiaberto_anel_tras_furos": {
+  "d2": 59.997715263017646,
+  "eta": 0.5553328929234214,
+  "P": 73.61440978121816
+ },
+ "A2b_semiaberto_sem_anel": {
+  "d2": 59.7266673545971,
+  "eta": 0.6026038658832752,
+  "P": 67.83976250257358,
+  "F_ax": 8521.669394763794
+ },
+ "B_Barske_emissao_parcial": {
+  "psi": 1.35,
+  "u2": 155.6453768827722,
+  "d2": 54.04741330973283,
+  "eta": [
+   0.38,
+   0.45
+  ],
+  "d_throat": 5.670591899084155,
+  "P": [
+   90.84556254367575,
+   107.58027143330024
+  ]
+ },
+ "C_2_estagios": {
+  "nq": 19.883425850161874,
+  "d2": 43.579262272163284,
+  "eta_T392": 0.4605594584184855,
+  "P": 88.76270457029281
+ }
+}
+indutor reserva: {'D_tip_mm': 24.813808800579295, 'D_hub_mm': 7.444142640173788, 'u_tip': 71.45863948252486, 'phi': 0.1}
+@60k: d2=55.42 eta=0.564 F_NPSH=1.22 P=72.4
