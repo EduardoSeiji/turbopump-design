@@ -1,0 +1,154 @@
+
+== inputs
+  p01_bar                  150
+  T01_K                    1150
+  p3_bar                   130
+  m_nozzle                 17.45
+  m_rotor                  17.5
+  n_rpm                    5.5e+04
+  P_OP_kW                  411.6
+  P_FP_kW                  74.3
+  eta_mec                  0.97
+
+== gas
+  M                        22.1
+  R                        376.2
+  cp                       1854
+  gamma                    1.255
+  x_H2O                    0.7076
+  T_ad_298                 1030
+  T_ad_400                 1182
+  mu_est                   4.3e-05
+
+== balanco
+  PR                       1.154
+  dh_is_kJkg               61.01
+  T3s                      1117
+  c0                       349.3
+  P_req_kW                 500.9
+  P_ideal_kW               1068
+  eta_min                  0.4692
+  dT_balanco               15.44
+  T3_balanco               1135
+  P_disp_kW                774.2
+  margem                   0.5455
+  PR_min                   1.096
+  dp_turbina_min_bar       13.2
+  P_fluxograma_dT10_kW     324.4
+
+== estagio
+  tipo                     axial, 1 estagio, admissao total, bocais subsonicos convergentes, rotor com shroud
+  R                        0.5
+  psi                      1
+  phi                      0.6
+  alpha2                   59.04
+  beta2                    0
+  beta3                    59.04
+  alpha3                   0
+  eta_ts                   0.7251
+  eta_tt                   0.834
+  u_c0                     0.6021
+  zeta_N                   0.06681
+  zeta_R                   0.06371
+
+== geometria
+  u                        210.3
+  Dm_mm                    73.04
+  d_tip_mm                 92.65
+  d_root_mm                53.42
+  h_stator_mm              18.39
+  h_rotor_mm               19.62
+  h_Dm                     0.2686
+  hub_tip                  0.5765
+  b_stator_mm              11
+  b_rotor_mm               9
+  z_stator                 23
+  z_rotor                  29
+  z_zweifel_stator         23.01
+  z_zweifel_rotor          28.12
+  throat_stator_mm         5.133
+  h_over_throat            3.584
+  shroud_t_mm              1.5
+  disk_t_mm                12
+  bore_mm                  20
+
+== escoamento
+  cx                       126.2
+  c2                       245.3
+  w2                       126.2
+  w3                       245.3
+  c3                       126.2
+  M2                       0.3353
+  Mw3                      0.3371
+  p2_bar                   139.7
+  T2                       1134
+  rho2                     32.76
+  rho3                     30.81
+  T03                      1126
+  A2_cm2                   42.21
+  A3_cm2                   45.01
+  Re_stator                2.362e+06
+
+== tensoes
+  u_tip                    266.8
+  u_root                   153.8
+  AN2_m2rpm2               1.362e+07
+  sigma_untap_MPa          203
+  sigma_tap_MPa            136
+  sigma_shroud_MPa         99.03
+  sigma_total_MPa          235
+
+== cargas
+  torque_Nm                86.97
+  F_tang_N                 3681
+  F_ax_pas_kN              4.373
+  F_ax_rotor_kN            6.245
+  P_atrito_disco_kW        0.3873
+  f_passagem_rotor_Hz      2.658e+04
+  f_passagem_estator_Hz    2.108e+04
+
+== rotor
+  material                 MAR-M-247
+  m_g                      296
+  Ip_kgmm2                 247.1
+  Id_kgmm2                 126.6
+
+== rotor/disco
+  m_g                      197.5
+  Ip_kgmm2                 80.32
+  Id_kgmm2                 42.53
+
+== rotor/shroud
+  m_g                      37.89
+  Ip_kgmm2                 84
+  Id_kgmm2                 42.31
+
+== rotor/pas
+  m_g                      60.59
+  Ip_kgmm2                 82.74
+  Id_kgmm2                 41.78
+
+== alternativa/impulso
+  eta_ts                   0.7609
+  u_c0                     0.4361
+  Dm_mm                    52.9
+  h3_mm                    37.42
+  h_Dm                     0.7073
+  p2_bar                   130
+  F_ax_rotor_kN            9.307e-13
+
+== alternativa/baixa_reacao_25
+  eta_ts                   0.7511
+  u_c0                     0.5004
+  Dm_mm                    60.69
+  h3_mm                    28.42
+  h_Dm                     0.4683
+  p2_bar                   134.8
+  F_ax_rotor_kN            2.836
+
+== varredura phi (R=0,5 | impulso)
+  phi=0.400  eta_R50=0.793  u_c0_R50=0.630  Dm_R50_mm=76.380  h_R50_mm=26.906  eta_imp=0.793  u_c0_imp=0.445  Dm_imp_mm=54.011  h_imp_mm=53.857
+  phi=0.500  eta_R50=0.761  u_c0_R50=0.617  Dm_R50_mm=74.827  h_R50_mm=22.428  eta_imp=0.779  u_c0_imp=0.441  Dm_imp_mm=53.517  h_imp_mm=43.882
+  phi=0.600  eta_R50=0.725  u_c0_R50=0.602  Dm_R50_mm=73.037  h_R50_mm=19.617  eta_imp=0.761  u_c0_imp=0.436  Dm_imp_mm=52.904  h_imp_mm=37.419
+  phi=0.700  eta_R50=0.687  u_c0_R50=0.586  Dm_R50_mm=71.070  h_R50_mm=17.759  eta_imp=0.740  u_c0_imp=0.430  Dm_imp_mm=52.187  h_imp_mm=32.959
+  phi=0.800  eta_R50=0.647  u_c0_R50=0.569  Dm_R50_mm=68.982  h_R50_mm=16.494  eta_imp=0.718  u_c0_imp=0.424  Dm_imp_mm=51.381  h_imp_mm=29.749
