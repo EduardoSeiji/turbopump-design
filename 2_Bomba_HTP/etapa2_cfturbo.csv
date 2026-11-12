@@ -1,0 +1,38 @@
+componente;parametro;valor;unidade;observacao
+Projeto;Fluido: densidade;1385.0;kg/m3;HTP 90 % a 300 K
+Projeto;Fluido: viscosidade dinamica;0.0011;Pa.s;
+Projeto;Fluido: pressao de vapor;500.0;Pa;incerto +-50 %
+Projeto;Vazao (voluta);45.93;m3/h;util + buffer do mancal B2
+Projeto;Altura total H;1693.4;m;dp_tt = 230 bar
+Projeto;Rotacao n;55000.0;rpm;
+Projeto;NPSH disponivel;36.78;m;p_in total 5 bar
+Indutor;Vazao no indutor;45.8;m3/h;inclui recirculacao S6
+Indutor;Altura do indutor;100.4;m;
+Indutor;D ponta entrada;46.5;mm;constante por 7.5 mm
+Indutor;D ponta saida;42.0;mm;afunilada
+Indutor;D cubo (constante);28.0;mm;eixo passante D24
+Indutor;Numero de pas;3;-;
+Indutor;beta1B ponta / cubo;8.72 / 14.3;deg;placa plana, r.tan(beta) = cte
+Indutor;Passo da helice (lead);22.41;mm;constante
+Indutor;Comprimento axial;18.5;mm;solidez ponta 2.5
+Indutor;Espessura ponta / cubo;0.8 / 1.6;mm;bordo de ataque em cunha
+Indutor;Folga de ponta;0.2;mm;
+Impeller;Altura do impeller;1593.0;m;eta_h = 0.83
+Impeller;Vazao no impeller Q_La;51.59;m3/h;eta_v = 0.8816
+Impeller;d_H (cubo);28.0;mm;
+Impeller;d_S (succao = d1);42.0;mm;= saida do indutor
+Impeller;d2;63.75;mm;
+Impeller;b2;4.72;mm;
+Impeller;Numero de pas;6;-;sem splitters
+Impeller;beta1B shroud / hub;15.02 / 23.81;deg;incidencia 2.0 deg
+Impeller;beta2B;25.0;deg;constante na largura
+Impeller;Espessura de pa;1.5;mm;
+Impeller;Pre-rotacao r.cu na entrada;0.2442;m2/s;c1u shroud = 11.63 m/s
+Impeller;Tipo;fechado + aneis frontal e traseiro + furos;;d_anel 47.0 mm, folga 0,08 mm
+Voluta;Tipo;dupla 2x180 deg, secao circular;;velocidade constante (A ~ eps)
+Voluta;d_z (lingueta);68.21;mm;d_z/d2 = 1,07
+Voluta;b3;9.45;mm;b3/b2 = 2
+Voluta;d3q por voluta parcial;10.05;mm;"projeto 1,10 x Q; simples seria 13.85 mm"
+Voluta;alpha3B;3.5;deg;
+Voluta;e3 (lingueta e nervura);1.5;mm;
+Voluta;Difusor: d saida / L;25.0 / 61.6;mm;semiangulo 5.0 deg
