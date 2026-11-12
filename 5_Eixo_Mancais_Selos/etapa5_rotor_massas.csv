@@ -1,0 +1,14 @@
+peca;material;m_kg;z_cg_mm;Ip_kgm2;Id_kgm2_no_cg;fonte
+Impeller FP (semiaberto);17-4PH H1025;0.08306;11.6;3.1971e-05;1.7198e-05;04 §7
+Fluido arrastado FP;Jet A;0.00593;11.0;3.0830e-06;1.5415e-06;04 §7
+Pistas int. B1 (par);aço;0.04837;40.0;6.8265e-06;5.7351e-06;06 rev.1
+Rotores selos IP;aço;0.13997;71.0;2.8694e-05;2.7831e-05;06 rev.1
+Indutor OP;Al 6061-T6;0.01680;101.2;4.2550e-06;2.5810e-06;03 §4.6
+Impeller OP;Al 6061-T6;0.04170;122.8;2.2880e-05;1.1680e-05;03 §4.6
+Fluido arrastado OP;HTP;0.01320;122.8;9.6140e-06;4.8070e-06;03 §4.6
+Luva S6;aço;0.01838;143.0;2.9130e-06;1.6096e-06;06 rev.1
+Pista int. B2;aço;0.02029;158.0;2.7290e-06;1.6080e-06;06 rev.1
+Luva S7;aço;0.02382;172.0;4.3945e-06;2.4831e-06;06 rev.1
+Rotor turbina (disco+pás+shroud);MAR-M-247;0.29597;190.0;2.4706e-04;1.2662e-04;05 §6
+Eixo (maciço, distribuído);IN718;0.57531;106.5;3.4555e-05;;este
+ROTOR TOTAL;;1.28280;116.0;3.9898e-04;5.0985e-03;Id no CG do rotor

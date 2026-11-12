@@ -1,0 +1,69 @@
+n = 55000 rpm, ω = 5759.6 rad/s
+Potências: OP 411.6 kW, FP 74.3 kW, turbina req 501.0 kW, perdas mec 15.0 kW, turbina disponível 774 kW
+Torques nominais: FP 12.91, OP 71.46, T 86.98 N·m; disponível 134.4 N·m
+Torques de projeto: {'FP-B1': 15.6, 'B1-OP': 17.2, 'OP-T': 134.4}
+
+OP: D_t 46.5 mm, cubo 28 mm, p1 impeller 18.64 bar, Δp_La 156.0 bar, anéis Ø47
+
+Massas/inércias (Ip, Id em kg·mm², Id no CG da peça):
+  Impeller FP (semiaberto)           17-4PH H1025   m=   83.1 g z=  11.6 mm Ip=  31.97 Id=  17.20  [04 §7]
+  Fluido arrastado FP                Jet A          m=    5.9 g z=  11.0 mm Ip=   3.08 Id=   1.54  [04 §7]
+  Pistas int. B1 (par)               aço            m=   48.4 g z=  40.0 mm Ip=   6.83 Id=   5.74  [06 rev.1]
+  Rotores selos IP                   aço            m=  140.0 g z=  71.0 mm Ip=  28.69 Id=  27.83  [06 rev.1]
+  Indutor OP                         Al 6061-T6     m=   16.8 g z= 101.2 mm Ip=   4.25 Id=   2.58  [03 §4.6]
+  Impeller OP                        Al 6061-T6     m=   41.7 g z= 122.8 mm Ip=  22.88 Id=  11.68  [03 §4.6]
+  Fluido arrastado OP                HTP            m=   13.2 g z= 122.8 mm Ip=   9.61 Id=   4.81  [03 §4.6]
+  Luva S6                            aço            m=   18.4 g z= 143.0 mm Ip=   2.91 Id=   1.61  [06 rev.1]
+  Pista int. B2                      aço            m=   20.3 g z= 158.0 mm Ip=   2.73 Id=   1.61  [06 rev.1]
+  Luva S7                            aço            m=   23.8 g z= 172.0 mm Ip=   4.39 Id=   2.48  [06 rev.1]
+  Rotor turbina (disco+pás+shroud)   MAR-M-247      m=  296.0 g z= 190.0 mm Ip= 247.06 Id= 126.62  [05 §6]
+  Eixo (maciço)                      IN718          m=  575.3 g z= 106.5 mm Ip=  34.55
+  ROTOR TOTAL m=1283 g z_CG=116.0 mm Ip=399.0 Id(CG rotor)=5098 kg·mm²
+
+Empuxo axial OP: sem balanceamento 13333 N, residual 1630 N (F_I 370); FP (04) +13 N em z
+    S1 FP traseira→B1            d= 20.0 mm    5.0→   8.0 bar  F_z=     -94 N
+    S2 primário Jet A            d= 30.0 mm    8.0→   1.5 bar  F_z=    +459 N
+    S3 intermediário (He)        d= 30.0 mm    1.5→   4.0 bar  F_z=    -177 N
+    S4 intermediário (He)        d= 30.0 mm    4.0→   1.5 bar  F_z=    +177 N
+    S5 primário HTP              d= 30.0 mm    1.5→   5.0 bar  F_z=    -247 N
+    Indutor OP (D_t entrada)     d= 46.5 mm    5.0→  18.6 bar  F_z=   -2317 N
+    S6 traseira OP→buffer B2     d= 22.0 mm   18.6→ 155.0 bar  F_z=   -5183 N
+    S7 buffer→cavidade disco     d= 26.0 mm  155.0→ 139.7 bar  F_z=    +812 N
+    Rotor turbina                d= 92.7 mm  139.7→ 130.0 bar  F_z=   +6550 N
+  F_net = -1638 N (+z = p/ turbina); resíduo 0,10/0,20: -971/-2304; p_buf 145/165: -1788/-1487
+  Se o escape da turbina fosse −z (leitura da 05): F_net = -14433 N
+
+  nominal (BEP): F_FP 190 F_OP 693 F_T 33 N → R_B1 470 R_B2 447 N
+  projeto kR,tot=0,15: F_FP 596 F_OP 1707 F_T 33 N → R_B1 1329 R_B2 1007 N
+
+Diâmetros:
+  FP-B1 (z=24)               M=   7.4 T=  15.6 N·m d_tor=  8.1 d_fad=  9.2 adotado=  18 mm
+  B1 centro (z=40)           M=  16.9 T=  15.6 N·m d_tor=  8.1 d_fad= 12.0 adotado=  20 mm
+  Sob selos IP (z=70)        M=   5.1 T=  17.2 N·m d_tor=  8.4 d_fad=  8.3 adotado=  22 mm
+  Sob OP (z=110)             M=  34.4 T=  17.2 N·m d_tor=  8.4 d_fad= 15.2 adotado=  24 mm
+  S6 (z=143)                 M=  13.5 T= 134.4 N·m d_tor= 16.6 d_fad= 13.4 adotado=  22 mm
+  B2 (z=158)                 M=   1.1 T= 134.4 N·m d_tor= 16.6 d_fad= 12.6 adotado=  20 mm
+  Montagem turbina (z=181)   M=   0.3 T= 134.4 N·m d_tor= 16.6 d_fad= 12.5 adotado=  20 mm
+
+Mancais:
+  nominal (BEP): R_B1 470, R_B2 447, P_B1 1739, P_B2 447, L10_B1_min 14689, L10_B2_min 12198109
+  projeto kR,tot=0,15: R_B1 1329, R_B2 1007, P_B1 2315, P_B2 1007, L10_B1_min 6230, L10_B2_min 810587
+  DN = 1.10e+06; refrig. B1 67 g/s Jet A, B2 36 g/s HTP
+
+Selos:
+  S1 FP traseira→B1            anel flutuante                         d=  20 Δp=   3.0 bar u= 57.6 m/s vaz=    12 g/s
+  S2 primário Jet A            face (carbono × carbeto)               d=  30 Δp=   6.5 bar u= 86.4 m/s vaz=     —
+  S3/S4 intermediários         circunferencial segmentado, purga He   d=  30 Δp=   2.5 bar u= 86.4 m/s vaz=     —
+  S5 primário HTP              face (materiais classe HTP)            d=  30 Δp=   3.5 bar u= 86.4 m/s vaz=     —
+  S6 traseira OP↔buffer B2     anel flutuante multiestágio            d=  22 Δp= 136.4 bar u= 63.4 m/s vaz=   121 g/s
+  S7 buffer B2→turbina         anel flutuante + labirinto             d=  26 Δp=  15.3 bar u= 74.9 m/s vaz=    48 g/s
+
+1ª crítica forward (c/ giroscópico):
+  k_B1=   20 k_B2=   40 MN/m →   59938 rpm (1.09·n)
+  k_B1=   35 k_B2=   70 MN/m →   74720 rpm (1.36·n)
+  k_B1=   50 k_B2=  100 MN/m →   83983 rpm (1.53·n)
+  k_B1=  100 k_B2=  200 MN/m →   97780 rpm (1.78·n)
+  k_B1=  200 k_B2=  400 MN/m →  105754 rpm (1.92·n)
+  k_B1=100000 k_B2=100000 MN/m →  135400 rpm (2.46·n)
+  Sensib. d sob OP (k 50/100): [(20, 78450, np.float64(1.43)), (22, 81897, np.float64(1.49)), (24, 83983, np.float64(1.53))]
+  f naturais não girando (50/100) [Hz]: [1183, 1829, 2171]
