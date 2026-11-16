@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.vscode/
+.DS_Store
+# bibliografia (livros e artigos) nao entra no repositorio
+bibliografia/
+*.pdf
