@@ -8,6 +8,7 @@ Primeira etapa do projeto didático `turbopump-design` (TCC/Mestrado, Poli-USP):
 |---|---|
 | `etapa0_ciclo.py` | Propriedades a 300 K, H/Q/potências das bombas, gás de decomposição do HTP (Cantera) e balanço da turbina |
 | `saida_etapa0.txt` | Saída do script |
+| `resultados_etapa0.md` | Relatório da etapa |
 | `requirements.txt` | Dependências |
 
 ## Como rodar
@@ -29,5 +30,7 @@ python etapa0_ciclo.py
 - Gás de HTP 90 %: T adiabática 1030 K (líquido a 298 K) / 1182 K (líquido a 400 K); M = 22,1 g/mol, γ = 1,255.
 - Turbina 150 → 130 bar, 1150 K: Δh_s = 61 kJ/kg; necessário ΔT ≈ 18 K com η_T ≈ 0,56
   (ΔT = 10 K não fecha o balanço).
+
+As eficiências e os 593 kW são provisórios; os valores finais (0,706 / 0,555 e 501 kW) estão em `../docs/parametros_mestres.md`.
 
 Hipóteses: composição congelada, gás ideal, calor de mistura do HTP desprezado, η provisórias (revisar na Etapa 1).
